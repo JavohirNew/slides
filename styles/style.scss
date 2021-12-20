@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    padding-inline-start: 0
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+// section    header 
+header {
+    height: 100vh;
+    nav {
+        height: 15vh;
+        a {
+            sup {
+                position: relative;
+                top: -10px;
+                left: 3px;
+                padding: 9px 6px;
+                background-color: tomato;
+                color: rgba(255, 255, 255, 0.726);
+                border-radius: 50%;
+            }
+        }
+        ul{
+            justify-content: space-between;
+            margin: auto 0;
+            width: 300px;
+            li {
+                width: max-content;
+                a:hover {
+                    font-weight: bold;
+                }
+            }
+            li:last-child a{
+                color: white;
+            }
+        }
+    }
+    .banner {
+        height: 70vh;
+        .text {
+            width: 40%;
+            h1 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 21px;
+            }
+        }
+        .foto {
+            .doira {
+                width: 200px;
+                height: 200px;
+                background-color: tomato;
+                border-radius: 50%;
+                z-index: -1;
+                left: -80px;
+                top: 25%;
+            }
+            width: 50%;
+            img {
+                width: 100%;
+                box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.637);
+            }
+        }
+    }
+    .brends {
+        height: 15vh;
+        opacity: 0.4;
+    }
+}
+
+
+// section     catapult
+.catapult {
+    height: 100vh;
+    .foto {
+        width: 500px;
+        height: 350px;
+        img {
+            position: absolute;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            &:hover {
+                z-index: 2;
+                transform: scale(1.2, 1.2);
+            }
+        }
+        img:first-child {
+            width: 420px;
+            top: -10px;
+            left: -16px;
+            filter: drop-shadow(5px 5px 5px black);
+            
+        }
+        img:nth-child(2) {
+            width: 420px;
+            top: 50px;
+            left: 45px;
+            filter: drop-shadow(5px 5px 5px black);
+        }
+        img:nth-child(3) {
+            width: 420px;
+            bottom: -20px;
+            right: -15px;
+            filter: drop-shadow(5px 5px 5px black);
+        }
+    }
+    .text {
+        width: 420px;
+        h1 {
+            font-size: 39px;
+            span {
+                color: orange;
+            }
+        }
+        .wrap-info {
+            > span {
+                margin-top: 20px;
+                padding-top: 8px;
+                border-radius: 8px;
+                font-weight: 700;
+                font-size: large;
+                width: 100px;
+                height: 70px;
+                background-color: blanchedalmond;
+                > span {
+                    font-size: initial;
+                    font-weight: initial;
+                }
+            }
+        }
+    }
+}
+
+
+// section     native
+.native {
+    height: 100vh;
+    img {
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+
+// section       clean
+.clean {
+    height: 100vh;
+    .foto {
+        width: 500px;
+        height: 350px;
+        img {
+            position: absolute;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            &:hover {
+                z-index: 2;
+                transform: scale(1.2, 1.2);
+            }
+        }
+        img:first-child {
+            width: 420px;
+            top: -10px;
+            left: -16px;
+            filter: drop-shadow(5px 5px 5px black);
+            
+        }
+        img:last-child {
+            width: 420px;
+            bottom: -20px;
+            right: -15px;
+            filter: drop-shadow(5px 5px 5px black);
+        }
+    }
+    .text {
+        width: 420px;
+        h1 {
+            font-size: 39px;
+            span {
+                color: green;
+            }
+        }
+        .wrap-info {
+            > span {
+                margin-top: 20px;
+                padding-top: 8px;
+                border-radius: 8px;
+                font-weight: 700;
+                font-size: large;
+                width: 100px;
+                height: 70px;
+                background-color: blanchedalmond;
+                > span {
+                    font-size: initial;
+                    font-weight: initial;
+                }
+            }
+        }
+    }
+}
+
+
+// section       create
+.create {
+    background: #241E38;
+    color: white;
+    div {
+        width: 740px;
+        height: 90vh;
+        margin: 0 auto;
+        h4 {
+            position: relative;
+            font-size: 20px;
+            span{
+                position: absolute;
+                color: green;
+                top: -10px;
+                right: -50px;
+            }
+        }
+        h1 {
+            font-size: 45px;
+        }
+        p {
+            margin-bottom: 0;
+            font-size: 21px;
+        }
+    }
+    img{
+        width: 90%;
+    }
+}
+
+// section     carousel
+.carousel {
+    
+    height: 100vh;
+    .window{
+        position: relative;
+        right: -20px;
+        width: 800px;
+        height: 400px;
+        overflow: hidden;
+        #img1:checked ~ .photo1{
+            margin-left: 0;
+        }
+        #img2:checked ~ .photo1{
+            margin-left: -100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease;
+        }
+    }
+    .dots {
+        .label1{
+            top: 250px;
+            left: 0px;
+        }
+        .label2{
+            top: 250px;
+            right: 0px;
+        }
+    }
+}
+
+
+// section      pricing
+.pricing {
+    height: 100vh;
+    .wrap-cards {
+        .card {
+            h5 {
+                margin-bottom: 1rem;
+                font-weight: bold;
+            }
+            padding: 2% 6%;
+            h2 {
+                text-align: center;
+                span {
+                    font-size: 14px;
+                }
+            }
+            h6 {
+                text-align: center;
+            }
+            i {
+                color: rgba(0, 0, 0, 0.507);
+                margin-right: 5px;
+            }
+        }
+        .card2 i {
+            color: #42ba96;
+            margin-right: 5px;
+        }
+    }
+}
+
+
+//  footer
+footer {
+    > div {
+        height: 20vh;
+        font-size: 15px;
+        p {
+            width: 300px;
+            font-weight: bold;
+            span {
+                border-bottom: 1px solid black;
+            }
+        }
+        ul {
+            width: 400px;
+        }
+    }
+    > p {
+        height: 10vh;
+        text-align: center;
+    }
+}

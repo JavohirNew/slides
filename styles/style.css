@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  height: 100vh;
+}
+
+header nav {
+  height: 15vh;
+}
+
+header nav a sup {
+  position: relative;
+  top: -10px;
+  left: 3px;
+  padding: 9px 6px;
+  background-color: tomato;
+  color: rgba(255, 255, 255, 0.726);
+  border-radius: 50%;
+}
+
+header nav ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto 0;
+  width: 300px;
+}
+
+header nav ul li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+header nav ul li a:hover {
+  font-weight: bold;
+}
+
+header nav ul li:last-child a {
+  color: white;
+}
+
+header .banner {
+  height: 70vh;
+}
+
+header .banner .text {
+  width: 40%;
+}
+
+header .banner .text h1 {
+  font-size: 45px;
+}
+
+header .banner .text p {
+  font-size: 21px;
+}
+
+header .banner .foto {
+  width: 50%;
+}
+
+header .banner .foto .doira {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  border-radius: 50%;
+  z-index: -1;
+  left: -80px;
+  top: 25%;
+}
+
+header .banner .foto img {
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.637);
+          box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.637);
+}
+
+header .brends {
+  height: 15vh;
+  opacity: 0.4;
+}
+
+.catapult {
+  height: 100vh;
+}
+
+.catapult .foto {
+  width: 500px;
+  height: 350px;
+}
+
+.catapult .foto img {
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.catapult .foto img:hover {
+  z-index: 2;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.catapult .foto img:first-child {
+  width: 420px;
+  top: -10px;
+  left: -16px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+          filter: drop-shadow(5px 5px 5px black);
+}
+
+.catapult .foto img:nth-child(2) {
+  width: 420px;
+  top: 50px;
+  left: 45px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+          filter: drop-shadow(5px 5px 5px black);
+}
+
+.catapult .foto img:nth-child(3) {
+  width: 420px;
+  bottom: -20px;
+  right: -15px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+          filter: drop-shadow(5px 5px 5px black);
+}
+
+.catapult .text {
+  width: 420px;
+}
+
+.catapult .text h1 {
+  font-size: 39px;
+}
+
+.catapult .text h1 span {
+  color: orange;
+}
+
+.catapult .text .wrap-info > span {
+  margin-top: 20px;
+  padding-top: 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: large;
+  width: 100px;
+  height: 70px;
+  background-color: blanchedalmond;
+}
+
+.catapult .text .wrap-info > span > span {
+  font-size: initial;
+  font-weight: initial;
+}
+
+.native {
+  height: 100vh;
+}
+
+.native img {
+  width: 100%;
+  height: 60vh;
+}
+
+.clean {
+  height: 100vh;
+}
+
+.clean .foto {
+  width: 500px;
+  height: 350px;
+}
+
+.clean .foto img {
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.clean .foto img:hover {
+  z-index: 2;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.clean .foto img:first-child {
+  width: 420px;
+  top: -10px;
+  left: -16px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+          filter: drop-shadow(5px 5px 5px black);
+}
+
+.clean .foto img:last-child {
+  width: 420px;
+  bottom: -20px;
+  right: -15px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+          filter: drop-shadow(5px 5px 5px black);
+}
+
+.clean .text {
+  width: 420px;
+}
+
+.clean .text h1 {
+  font-size: 39px;
+}
+
+.clean .text h1 span {
+  color: green;
+}
+
+.clean .text .wrap-info > span {
+  margin-top: 20px;
+  padding-top: 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: large;
+  width: 100px;
+  height: 70px;
+  background-color: blanchedalmond;
+}
+
+.clean .text .wrap-info > span > span {
+  font-size: initial;
+  font-weight: initial;
+}
+
+.create {
+  background: #241E38;
+  color: white;
+}
+
+.create div {
+  width: 740px;
+  height: 90vh;
+  margin: 0 auto;
+}
+
+.create div h4 {
+  position: relative;
+  font-size: 20px;
+}
+
+.create div h4 span {
+  position: absolute;
+  color: green;
+  top: -10px;
+  right: -50px;
+}
+
+.create div h1 {
+  font-size: 45px;
+}
+
+.create div p {
+  margin-bottom: 0;
+  font-size: 21px;
+}
+
+.create img {
+  width: 90%;
+}
+
+.carousel {
+  height: 100vh;
+}
+
+.carousel .window {
+  position: relative;
+  right: -20px;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel .window #img1:checked ~ .photo1 {
+  margin-left: 0;
+}
+
+.carousel .window #img2:checked ~ .photo1 {
+  margin-left: -100%;
+}
+
+.carousel .window img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.carousel .dots .label1 {
+  top: 250px;
+  left: 0px;
+}
+
+.carousel .dots .label2 {
+  top: 250px;
+  right: 0px;
+}
+
+.pricing {
+  height: 100vh;
+}
+
+.pricing .wrap-cards .card {
+  padding: 2% 6%;
+}
+
+.pricing .wrap-cards .card h5 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.pricing .wrap-cards .card h2 {
+  text-align: center;
+}
+
+.pricing .wrap-cards .card h2 span {
+  font-size: 14px;
+}
+
+.pricing .wrap-cards .card h6 {
+  text-align: center;
+}
+
+.pricing .wrap-cards .card i {
+  color: rgba(0, 0, 0, 0.507);
+  margin-right: 5px;
+}
+
+.pricing .wrap-cards .card2 i {
+  color: #42ba96;
+  margin-right: 5px;
+}
+
+footer > div {
+  height: 20vh;
+  font-size: 15px;
+}
+
+footer > div p {
+  width: 300px;
+  font-weight: bold;
+}
+
+footer > div p span {
+  border-bottom: 1px solid black;
+}
+
+footer > div ul {
+  width: 400px;
+}
+
+footer > p {
+  height: 10vh;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
